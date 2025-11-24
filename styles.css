@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    background: #e5e5e5;
+}
+
+/* Contenedor general */
+.page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+/* Texto vertical lateral */
+.side-text {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    letter-spacing: 0.2em;
+    font-size: 1rem;
+    color: #444;
+}
+
+/* GRID PRINCIPAL */
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto repeat(2, 200px) 160px;
+    grid-template-areas:
+        "titulo titulo top-right"
+        "left-top center right-top"
+        "left-bottom center right-bottom"
+        "bottom-left bottom-center bottom-right";
+    gap: 1rem;
+    background: #ffffff;
+    padding: 2rem;
+
+    /* Evita que se vea gigante en pantallas grandes */
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 12px;
+}
+
+/* Todas las tarjetas */
+.item {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Póster principal (sustituye Care Bears) */
+.titulo {
+    grid-area: titulo;
+}
+
+/* Posiciones de cada imagen */
+.item-top-right {
+    grid-area: top-right;
+}
+
+.item-left-top {
+    grid-area: left-top;
+}
+
+.item-center {
+    grid-area: center;
+}
+
+.item-right-top {
+    grid-area: right-top;
+}
+
+.item-left-bottom {
+    grid-area: left-bottom;
+}
+
+.item-right-bottom {
+    grid-area: right-bottom;
+}
+
+.item-bottom-left {
+    grid-area: bottom-left;
+}
+
+.item-bottom-center {
+    grid-area: bottom-center;
+}
+
+.item-bottom-right {
+    grid-area: bottom-right;
+}
