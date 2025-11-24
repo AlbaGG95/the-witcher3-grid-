@@ -8,7 +8,8 @@ He elegido **The Witcher 3**, uno de mis videojuegos favoritos, como temática p
 
 ## 📸 Resultado final
 
-![Resultado del proyecto](./ProyectoGridTheWitcher3.png)
+![Resultado del proyecto]<img width="1920" height="911" alt="ProyectoGridTheWitcher3" src="https://github.com/user-attachments/assets/54b7ee54-5365-4cd7-a2c8-18697a571eec" />
+
 
 ---
 
